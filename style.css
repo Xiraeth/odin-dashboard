@@ -378,5 +378,33 @@ body {
 }
 
 .trending {
-  padding: 20px;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.trending a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.trending > div {
+  display: flex;
+  width: 100%;
+}
+
+.trending img {
+  width: 50px;
+  border-radius: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 1.1rem;
 }
