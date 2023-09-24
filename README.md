@@ -2,6 +2,5 @@
 
 The final project on The Odin Project's "Intermediate HTML & CSS Course".  
 
-This is the original that I am trying to duplicate:
+![dashboard_final](https://github.com/Xiraeth/odin-dashboard/assets/77112995/13cf35e3-a876-4f0a-9293-c21c04389a30)
 
-![image](https://github.com/Xiraeth/odin-dashboard/assets/77112995/5fdfb861-5301-45f4-ad64-d9c17f307cae)
