@@ -256,7 +256,7 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 20px;
 }
 
@@ -299,7 +299,9 @@ body {
 }
 
 .project-content {
-  text-wrap: normal;
+  width: 40ch;
+  overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 
@@ -315,14 +317,48 @@ body {
 
 .projects-second-part {
   width: 30%;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .announcements,
 .trending {
-  background-color: grey;
-  height: 40%;
+  font-size: 0.9rem;
+  background-color: #fff;
+  padding: 30px;
+  height: 250px;
   margin-bottom: 30px;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.4);
+}
+
+.announcements {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.separation-border {
+  border: 1px solid grey;
+  opacity: 0.5;
+}
+
+.announcements p {
+  font-weight: 300;
+  width: 80%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.announcements h3 {
+  width: 80%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.ann-1,
+.ann-2,
+.ann-3 {
+  cursor: pointer;
 }
