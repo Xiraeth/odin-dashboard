@@ -1,3 +1,3 @@
 # Creating a dashboard  
 
-The final project of the Intermediate HTML & CSS Course of The Odin Project
+The final project on The Odin Project's "Intermediate HTML & CSS Course".
