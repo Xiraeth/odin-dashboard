@@ -8,6 +8,7 @@ const navMenuTexts = document.querySelectorAll(".nav-menu-text");
 const copyrightText = document.querySelector(".copyright-container > p");
 const rightSide = document.querySelector(".right-side");
 const notifIcon = document.querySelector(".notif-icon");
+const appLinks = document.querySelector(".grid-container");
 
 let open = true;
 
@@ -20,6 +21,18 @@ notifIcon.addEventListener("mouseenter", function () {
 
 notifIcon.addEventListener("mouseleave", function () {
   notifIcon.classList.remove("fa-shake");
+});
+
+appLinks.addEventListener("click", (e) => {
+  const target = e.target;
+  if (!target) return;
+
+  if (target.classList.contains("fa-heart")) {
+    target.classList.toggle("fa-solid");
+    target.classList.toggle("fa-regular");
+  }
+
+  if (e.target.classList.contains("icon")) e.preventDefault();
 });
 
 xButton.addEventListener("click", function () {

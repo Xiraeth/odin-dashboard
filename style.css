@@ -153,7 +153,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: clamp(70px, 30%, 800px);
+  width: clamp(300px, 30%, 320px);
 }
 
 .notif-icon {
@@ -260,6 +260,11 @@ body {
   gap: 20px;
 }
 
+.grid-container a {
+  text-decoration: none;
+  color: black;
+}
+
 .grid-item {
   position: relative;
   background-color: rgb(255, 255, 255);
@@ -285,6 +290,7 @@ body {
   position: absolute;
   bottom: 30px;
   right: 40px;
+  z-index: 10;
 }
 
 .project-icons .fa-regular,
@@ -324,7 +330,7 @@ body {
 .trending {
   font-size: 0.9rem;
   background-color: #fff;
-  padding: 30px;
+  padding: 10px;
   height: 250px;
   margin-bottom: 30px;
   border-radius: 10px;
@@ -361,4 +367,16 @@ body {
 .ann-2,
 .ann-3 {
   cursor: pointer;
+  padding: 10px;
+}
+
+.ann-1:hover,
+.ann-2:hover,
+.ann-3:hover {
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.trending {
+  padding: 20px;
 }
