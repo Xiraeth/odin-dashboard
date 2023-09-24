@@ -6,8 +6,21 @@ const navigationMenu = document.querySelector(".navigation-menu");
 const mainMenu = document.querySelector(".main-menu");
 const navMenuTexts = document.querySelectorAll(".nav-menu-text");
 const copyrightText = document.querySelector(".copyright-container > p");
+const rightSide = document.querySelector(".right-side");
+const notifIcon = document.querySelector(".notif-icon");
 
 let open = true;
+
+notifIcon.addEventListener("mouseenter", function () {
+  notifIcon.classList.add("fa-shake");
+  setTimeout(function () {
+    notifIcon.classList.remove("fa-shake");
+  }, 800);
+});
+
+notifIcon.addEventListener("mouseleave", function () {
+  notifIcon.classList.remove("fa-shake");
+});
 
 xButton.addEventListener("click", function () {
   xButton.classList.toggle("fa-x");
@@ -17,7 +30,6 @@ xButton.addEventListener("click", function () {
   else navigationMenu.style.width = "300px";
 
   navIcons.forEach((icon) => {
-    console.log(icon);
     if (open) {
       icon.style.marginRight = "0";
       icon.style.fontSize = "1.8rem";
@@ -46,6 +58,11 @@ xButton.addEventListener("click", function () {
       copyrightText.textContent = "Copyright © Xiraeth";
     }, 100);
   }
+
+  if (open) rightSide.style.width = parseInt(window.innerWidth) + "px";
+  else
+    rightSide.style.width =
+      parseInt(window.innerWidth) - parseInt(navigationMenu.style.width) + "px";
 
   open = open == true ? false : true;
 });
